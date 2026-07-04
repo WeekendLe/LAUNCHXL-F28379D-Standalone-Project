@@ -4,6 +4,9 @@
 **Date:** July 2026  
 **Target Hardware:** TI C2000 Delfino LaunchPad (LAUNCHXL-F28379D)  
 **Compiler Version:** TI v25.11.1.LTS (or compatible toolchain)
+## License
+Licensed under the MIT License (free to use).
+Attribution or a quick message letting me know this project helped you will make my day :D
 
 ---
 
