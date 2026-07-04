@@ -28,10 +28,10 @@ You **DO NOT** need to download, include, or path an external Texas Instruments 
 ---
 
 ## 3. Hardware Configuration
-* **ePWM1:** Configured as a periodic time-base interrupt source designed to drive power conversion modules.
+* **ePWM1:** Configured as a periodic time-base interrupt source designed to drive power converter.
 * **ADCA:** Sampled synchronously with the ePWM1 timer-base events (results extracted from register `ADCRESULT0`).
-* **DACB:** Writes a constant default value (`1000U`) to the active `DACVALS` register on every ePWM interrupt cycle.
-* **CPU Timer1:** Configured for low-rate execution. Bypasses the PIE block to trigger core interrupt line `INT13` periodically to process reporting routines.
+* **DACB:** Writes a constant default value to the active `DACVALS` register on every ePWM interrupt cycle.
+* **CPU Timer1:** Configured for low-rate execution. Periodically to process reporting routines.
 * **SCI (UART):** Configured as a non-blocking communication line using software ring buffers and dedicated ring management functions.
 
 ---
@@ -55,9 +55,6 @@ You **DO NOT** need to download, include, or path an external Texas Instruments 
 * Clears the hardware overflow status flag (`TIF`) belonging to CPU Timer 1.
 * Re-broadcasts the retro startup graphic using `vPrintWelcomeBanner()`.
 * Samples the current value of the `ADCA` global variable and transforms it into character strings:
-  1. Queues the header label `"ADCA: "` into the software transmit ring buffer.
-  2. Converts the 16-bit raw integer into alphanumeric characters.
-  3. Appends newline and carriage return string control sequences (`\n\r`).
 * Pumps data out to the physical wire by calling the ring buffer manager `vWriteSCI()`.
 * Toggles the physical Red LED (`GPIO34` / `LD3` on the LaunchPad) to establish a distinct heartbeat.
 
