@@ -13,14 +13,14 @@
 // Public variables
 
 // Function Prototype
-void prvHardwareSetupClock(void);
-void prvHardwareSetupGPIO(void);
-void prvHardwareSetupEPWM(void);
-void prvHardwareSetupADC(void);
-void prvHardwareSetupDAC(void);
-void prvHardwareSetupSCI(void);
-void prvHardwareSetupTimer(void);
-void prvHardwareSetupInterrupt(void);
+static void prvHardwareSetupClock(void);
+static void prvHardwareSetupGPIO(void);
+static void prvHardwareSetupEPWM(void);
+static void prvHardwareSetupADC(void);
+static void prvHardwareSetupDAC(void);
+static void prvHardwareSetupSCI(void);
+static void prvHardwareSetupTimer(void);
+static void prvHardwareSetupInterrupt(void);
 
 // vHardwareSetup.c
 void vHardwareSetup( void )
@@ -38,7 +38,7 @@ void vHardwareSetup( void )
 }
 
 // pvrHardwareSetupClock
-void prvHardwareSetupClock( void )
+static void prvHardwareSetupClock( void )
 {
     InitSysCtrl();  // Setup sysclk as 200 MHz and enable peripheral clock
     
@@ -50,7 +50,7 @@ void prvHardwareSetupClock( void )
 }
 
 // prvHardwareSetupGPIO
-void prvHardwareSetupGPIO( void )
+static void prvHardwareSetupGPIO( void )
 {
     InitGpio();
 
@@ -89,7 +89,7 @@ void prvHardwareSetupGPIO( void )
 }
 
 // prvHardwareSetupEPWM
-void prvHardwareSetupEPWM( void )
+static void prvHardwareSetupEPWM( void )
 {
     // Configure peripheral clock for EPWM
     EALLOW;
@@ -141,7 +141,7 @@ void prvHardwareSetupEPWM( void )
 }
 
 // pvrHarwareSetupADC
-void prvHardwareSetupADC ( void )
+static void prvHardwareSetupADC ( void )
 {
     // ADCA
     EALLOW;
@@ -159,7 +159,7 @@ void prvHardwareSetupADC ( void )
 }
 
 // prvHardwareSetupDAC
-void prvHardwareSetupDAC ( void )
+static void prvHardwareSetupDAC ( void )
 {
     // Configure for DACOUTB (Pin 70 on LAUNCHXL-F28379D)
     EALLOW;
@@ -172,7 +172,7 @@ void prvHardwareSetupDAC ( void )
 }
 
 // prvHardwareSetupSCI
-void prvHardwareSetupSCI ( void )
+static void prvHardwareSetupSCI ( void )
 {
     // Set up the SCIA module using GPIO42 and GPIO43 as pinout
     // Set up FIFO for SCIA
@@ -227,7 +227,7 @@ void prvHardwareSetupSCI ( void )
 }
 
 // prvHardwareSetupTimer
-void prvHardwareSetupTimer( void )
+static void prvHardwareSetupTimer( void )
 {
     // Using CPU TIMER1 for logging and process SCI message
     // Stop CPU TIMER1
@@ -260,7 +260,7 @@ void prvHardwareSetupTimer( void )
 }
 
 // prvHarwareSetupInterrupt
-void prvHardwareSetupInterrupt( void )
+static void prvHardwareSetupInterrupt( void )
 {
     // Clear all interrupts and initialize PIE vector table
     DINT;   // Disable gobal interrupt
