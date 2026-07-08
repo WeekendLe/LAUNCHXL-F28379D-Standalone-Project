@@ -286,6 +286,8 @@ static void prvHardwareSetupInterrupt( void )
     IER |= M_INT9;  // Enable interrupt group 9 (PIE output go to CPU INT vector 9)
     IER |= M_INT13; // Enable interrupt vector 13 (which connects directly to the CPU INT vector 13)
 
-    EINT;   // Enable global interrupt 
-    ERTM;
+    // Enable Global Interrupt
+    // Should be called in main.c after finished all initilization
+    //EINT;
+    //ERTM;
 }
