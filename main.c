@@ -27,6 +27,9 @@ uint32_t cnt = 10UL;
 */
 void main( void )
 {
+	// Diable Global Interrupt
+	DINT;
+	
 	// Hardware Setup
 	vHardwareSetup(); 
 
@@ -36,6 +39,10 @@ void main( void )
 	CpuTimer1Regs.TCR.bit.TSS = 0U;	// Start the timer
 	
 	// Init Complete
+	// Enable Global Interrupt
+	EINT;
+    ERTM;
+	
 	vPrintWelcomeBanner();
 	
 	for(;;)
