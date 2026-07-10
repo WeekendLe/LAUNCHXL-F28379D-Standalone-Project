@@ -8,12 +8,12 @@
 #include "project.h"
 #include "SciDriverF28379D.h"
 
-// Transmit Software Ring Buffer (Static for encapsulation)
+// Transmit Software Ring Buffer
 static volatile unsigned char ucTxBuffer[TX_BUFFER_SIZE];
 static volatile uint16_t usTxHead = 0U;
 static volatile uint16_t usTxTail = 0U;
 
-// Receive Software Ring Buffer (Static for encapsulation)
+// Receive Software Ring Buffer
 static volatile unsigned char ucRxBuffer[RX_BUFFER_SIZE];  
 static volatile uint16_t usRxHead = 0U;
 static volatile uint16_t usRxTail = 0U;
