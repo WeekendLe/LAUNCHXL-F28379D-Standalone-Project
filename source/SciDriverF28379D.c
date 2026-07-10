@@ -95,7 +95,7 @@ void vWriteSCI( void )
 	/* 
 	** CRITICAL SECTION START: Temporary disable RX interrupt
 	** Reason: The RX Interrupt that is function as echo back will write byte to software TX buffer,
-	** that also modifed the usTxHead and usTxTail
+	** that also modified the usTxHead and usTxTail
 	*/
 	uint16_t usRxIerState = PieCtrlRegs.PIEIER9.bit.INTx1;
 	PieCtrlRegs.PIEIER9.bit.INTx1 = 0U;
