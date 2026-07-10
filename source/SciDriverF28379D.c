@@ -139,8 +139,8 @@ void vPutCharTxRingBuffer( unsigned char ucData )
 	/*
      * Check for software buffer overflow.
      * If the next head would equal the tail, the buffer is full and
-     * the byte is silently dropped – this ensures the function never
-     * blocks (fire‑and‑forget behaviour) => Risk of overflow data if sending to fast
+     * the byte is silently dropped – this ensures the function never blocks 
+     * (fire‑and‑forget behaviour) => Risk of overflow data if sending to fast
      */
 	if ( usNextTxHead != usTxTail )
 	{
