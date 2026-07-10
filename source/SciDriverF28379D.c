@@ -8,12 +8,12 @@
 #include "project.h"
 #include "SciDriverF28379D.h"
 
-// Transmit Software Ring Buffer (Static for encapsulation)
+// Transmit Software Ring Buffer
 static volatile unsigned char ucTxBuffer[TX_BUFFER_SIZE];
 static volatile uint16_t usTxHead = 0U;
 static volatile uint16_t usTxTail = 0U;
 
-// Receive Software Ring Buffer (Static for encapsulation)
+// Receive Software Ring Buffer
 static volatile unsigned char ucRxBuffer[RX_BUFFER_SIZE];  
 static volatile uint16_t usRxHead = 0U;
 static volatile uint16_t usRxTail = 0U;
@@ -95,7 +95,7 @@ void vWriteSCI( void )
 	/* 
 	** CRITICAL SECTION START: Temporary disable RX interrupt
 	** Reason: The RX Interrupt that is function as echo back will write byte to software TX buffer,
-	** that also modifed the usTxHead and usTxTail
+	** that also modified the usTxHead and usTxTail
 	*/
 	uint16_t usRxIerState = PieCtrlRegs.PIEIER9.bit.INTx1;
 	PieCtrlRegs.PIEIER9.bit.INTx1 = 0U;
@@ -139,8 +139,8 @@ void vPutCharTxRingBuffer( unsigned char ucData )
 	/*
      * Check for software buffer overflow.
      * If the next head would equal the tail, the buffer is full and
-     * the byte is silently dropped – this ensures the function never
-     * blocks (fire‑and‑forget behaviour) => Risk of overflow data if sending to fast
+     * the byte is silently dropped – this ensures the function never blocks 
+     * (fire‑and‑forget behaviour) => Risk of overflow data if sending to fast
      */
 	if ( usNextTxHead != usTxTail )
 	{
