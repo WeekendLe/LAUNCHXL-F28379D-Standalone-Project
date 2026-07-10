@@ -18,14 +18,13 @@
 #include "F2837xD_device.h"
 #include "F2837xD_Examples.h"
 
-// Custome files
+// Custom drivers
 #include "SciDriverF28379D.h"
 
 // Device library
 
 // Function Prototype
 void vHardwareSetup(void);
-void vSciaTransmit(void);
 
 // Interrupt Handler
 interrupt void vEPWM1_InterruptHandler(void);

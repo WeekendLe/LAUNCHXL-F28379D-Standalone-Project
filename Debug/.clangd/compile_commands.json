@@ -1,0 +1,67 @@
+[
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/main.c"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/SciDriverF28379D.c"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device/F2837xD_Adc.c"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device/F2837xD_CodeStartBranch.asm"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device/F2837xD_DefaultISR.c"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device/F2837xD_GlobalVariableDefs.c"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device/F2837xD_Gpio.c"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device/F2837xD_Ipc.c"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device/F2837xD_PieCtrl.c"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device/F2837xD_PieVect.c"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device/F2837xD_SysCtrl.c"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device/F2837xD_usDelay.asm"
+   },
+   {
+      "directory" : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/headers\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/include/common\" -I\"D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/device\" -D_LAUNCHXL_F28379D -DCPU1 -xc",
+      "file"      : "D:/Documents/Power_Electronic/Firmware/ccsWorkSpace/LAUNCHXL-F28379D-Standalone-Project/source/vHardwareSetup.c"
+   }
+]
