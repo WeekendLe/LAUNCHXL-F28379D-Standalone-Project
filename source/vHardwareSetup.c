@@ -223,7 +223,8 @@ static void prvHardwareSetupSCI ( void )
     SciaRegs.SCICTL1.bit.TXENA = 1U;
     SciaRegs.SCICTL1.bit.RXENA = 1U;
     SciaRegs.SCICTL2.bit.RXBKINTENA = 1U;   // Enable RX interrupt
-    SciaRegs.SCICTL1.bit.SWRESET = 1U;  // Release SCIA from reset
+    // Enable SCIA -> In Main 
+    //SciaRegs.SCICTL1.bit.SWRESET = 1U;  // Release SCIA from reset
 }
 
 // prvHardwareSetupTimer
