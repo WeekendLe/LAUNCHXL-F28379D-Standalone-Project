@@ -35,8 +35,9 @@ void main( void )
 
 	GpioDataRegs.GPADAT.bit.GPIO31 = 0U;
 	EPwm1Regs.TBCTL.bit.CTRMODE = 0U;	// Enable EPWM1
-	GpioDataRegs.GPBDAT.bit.GPIO34 = 0U;
 	CpuTimer1Regs.TCR.bit.TSS = 0U;	// Start the timer
+	SciaRegs.SCICTL1.bit.SWRESET = 1U;  // Release SCIA from reset
+	GpioDataRegs.GPBDAT.bit.GPIO34 = 0U;
 	
 	// Init Complete
 	// Enable Global Interrupt
