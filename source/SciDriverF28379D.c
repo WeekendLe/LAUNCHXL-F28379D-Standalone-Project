@@ -118,12 +118,13 @@ void vWriteSCI( void )
     	usTxTail = usNextTxTail;
 	}
 
+	/*
 	volatile uint16_t i;
 	for(i = 0U; i < 20; i++)
 	{
     	asm(" NOP");
 	}
-	
+	*/
 	/* CRITICAL SECTION END: Restore RX interrupt */
 	PieCtrlRegs.PIEIER9.bit.INTx1 = usRxIerState;
 }

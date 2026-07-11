@@ -28,7 +28,6 @@ void vHardwareSetup(void);
 
 // Interrupt Handler
 interrupt void vEPWM1_InterruptHandler(void);
-interrupt void vSCIA_RX_InterruptHandler(void);
 interrupt void vCpuTimer1_InterruptHandler(void);
 
 #endif /* PROJECT_H_ */
