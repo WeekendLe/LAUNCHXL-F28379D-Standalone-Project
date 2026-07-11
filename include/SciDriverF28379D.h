@@ -79,6 +79,7 @@ void vUint64ToString(uint64_t value, char *buffer);
 void vInt64ToString(int64_t value, char *buffer);
 void vFractionalToString(double value, char *buffer);
 
-// Interrupt Handler Prototype is declare in project.h
+// Interrupt Handler Prototype
+interrupt void vSCIA_RX_InterruptHandler(void);
 
 #endif /* SCIDRIVERF28379D_H_ */
