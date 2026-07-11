@@ -69,7 +69,7 @@ interrupt void vCpuTimer1_InterruptHandler( void )
 	// (Just status clear -> Do no affect interrupt functionality)
 	CpuTimer1Regs.TCR.bit.TIF = 1U;
 
-	vPrintWelcomeBanner();
+	//vPrintWelcomeBanner();
 	// Take a snapshot of the ADCA
 	uint16_t usAdca = ADCA;
 	vMsgToSend("ADCA: ");

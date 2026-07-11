@@ -1,7 +1,7 @@
 ******************************************************************************
              TMS320C2000 Linker PC v25.11.1                    
 ******************************************************************************
->> Linked Sat Jul 11 08:36:41 2026
+>> Linked Sat Jul 11 20:57:09 2026
 
 OUTPUT FILE NAME:   <LAUNCHXL_F28379D_setUp_CPU1.out>
 ENTRY POINT SYMBOL: "code_start"  address: 00000000
@@ -14,8 +14,8 @@ MEMORY CONFIGURATION
 PAGE 0:
   BEGIN                 00000000   00000002  00000002  00000000  RWIX
   RAMM0                 00000123   000002dd  0000003b  000002a2  RWIX
-  RAMLS0                00008000   00000800  000007f9  00000007  RWIX
-  RAMLS1                00008800   00000800  00000616  000001ea  RWIX
+  RAMLS0                00008000   00000800  000007fe  00000002  RWIX
+  RAMLS1                00008800   00000800  00000605  000001fb  RWIX
   RAMLS2                00009000   00000800  00000000  00000800  RWIX
   RAMLS3                00009800   00000800  00000000  00000800  RWIX
   RAMLS4                0000a000   00000800  00000000  00000800  RWIX
@@ -674,28 +674,28 @@ UidRegsFile
 *          1    000703c0    00000010     UNINITIALIZED
                   000703c0    00000010     F2837xD_GlobalVariableDefs.obj (UidRegsFile)
 
-.text.1    0    00008000    000007f9     
+.text.1    0    00008000    000007fe     
                   00008000    000004ab     F2837xD_SysCtrl.obj (.text)
-                  000084ab    00000345     SciDriverF28379D.obj (.text)
-                  000087f0    00000009     rts2800_fpu32.lib : _lock.c.obj (.text)
+                  000084ab    0000033b     SciDriverF28379D.obj (.text)
+                  000087e6    00000018     rts2800_fpu32.lib : ll_aox28.asm.obj (.text)
 
-.text.2    0    00008800    00000616     
+.text.2    0    00008800    00000605     
                   00008800    0000017c     vHardwareSetup.obj (.text)
                   0000897c    00000107     rts2800_fpu32.lib : ll_div28.asm.obj (.text)
                   00008a83    000000f0     F2837xD_Adc.obj (.text)
                   00008b73    00000088     rts2800_fpu32.lib : fs_div28.asm.obj (.text)
-                  00008bfb    00000072     main.obj (.text:retain)
-                  00008c6d    00000056     rts2800_fpu32.lib : boot28.asm.obj (.text)
-                  00008cc3    00000053     SciDriverF28379D.obj (.text:retain)
-                  00008d16    00000028     F2837xD_PieCtrl.obj (.text)
-                  00008d3e    00000026     F2837xD_PieVect.obj (.text)
-                  00008d64    00000024     rts2800_fpu32.lib : cpy_tbl.c.obj (.text)
-                  00008d88    00000020                       : memcpy.c.obj (.text)
-                  00008da8    0000001e     main.obj (.text)
-                  00008dc6    0000001e     rts2800_fpu32.lib : ll_cmp28.asm.obj (.text)
-                  00008de4    00000018                       : ll_aox28.asm.obj (.text)
-                  00008dfc    00000012                       : args_main.c.obj (.text)
-                  00008e0e    00000008     F2837xD_CodeStartBranch.obj (.text)
+                  00008bfb    00000070     main.obj (.text:retain)
+                  00008c6b    00000056     rts2800_fpu32.lib : boot28.asm.obj (.text)
+                  00008cc1    00000053     SciDriverF28379D.obj (.text:retain)
+                  00008d14    00000028     F2837xD_PieCtrl.obj (.text)
+                  00008d3c    00000026     F2837xD_PieVect.obj (.text)
+                  00008d62    00000024     rts2800_fpu32.lib : cpy_tbl.c.obj (.text)
+                  00008d86    00000020                       : memcpy.c.obj (.text)
+                  00008da6    0000001e     main.obj (.text)
+                  00008dc4    0000001e     rts2800_fpu32.lib : ll_cmp28.asm.obj (.text)
+                  00008de2    00000012                       : args_main.c.obj (.text)
+                  00008df4    00000009                       : _lock.c.obj (.text)
+                  00008dfd    00000008     F2837xD_CodeStartBranch.obj (.text)
 
 .text.3    0    0000b000    00000800     
                   0000b000    00000585     F2837xD_DefaultISR.obj (.text:retain)
@@ -710,15 +710,15 @@ MODULE SUMMARY
        Module                           code   initialized data   uninitialized data
        ------                           ----   ----------------   ------------------
     .\
-       main.obj                         144    24                 4                 
+       main.obj                         142    24                 4                 
     +--+--------------------------------+------+------------------+--------------------+
-       Total:                           144    24                 4                 
+       Total:                           142    24                 4                 
                                                                                     
     .\source\
-       SciDriverF28379D.obj             920    383                394               
+       SciDriverF28379D.obj             910    383                394               
        vHardwareSetup.obj               380    0                  0                 
     +--+--------------------------------+------+------------------+--------------------+
-       Total:                           1300   383                394               
+       Total:                           1290   383                394               
                                                                                     
     .\source\device\
        F2837xD_GlobalVariableDefs.obj   0      0                  9870              
@@ -752,7 +752,7 @@ MODULE SUMMARY
                                                                                     
        Stack:                           0      0                  512               
     +--+--------------------------------+------+------------------+--------------------+
-       Grand Total:                     5653   879                10790             
+       Grand Total:                     5641   879                10790             
 
 
 GLOBAL DATA SYMBOLS: SORTED BY DATA PAGE
@@ -974,15 +974,15 @@ page  address   name
 abs   ffffffff  .text                                 
 0     0000b7c9  C$$EXIT                               
 0     00008b73  FS$$DIV                               
-0     00008de4  LL$$AND                               
-0     00008dc6  LL$$CMP                               
+0     000087e6  LL$$AND                               
+0     00008dc4  LL$$CMP                               
 0     0000897c  LL$$DIV                               
 0     000089b8  LL$$MOD                               
-0     00008dec  LL$$OR                                
-0     00008df4  LL$$XOR                               
+0     000087ee  LL$$OR                                
+0     000087f6  LL$$XOR                               
 0     0000b7f2  U$$DIV                                
 0     0000b7f7  U$$MOD                                
-0     00008dd8  ULL$$CMP                              
+0     00008dd6  ULL$$CMP                              
 0     000089f2  ULL$$DIV                              
 0     00008a21  ULL$$MOD                              
 1     0000accc  _ADCA                                 
@@ -1148,7 +1148,7 @@ abs   ffffffff  .text
 1     00047000  _Emif1Regs                            
 1     0005f4a0  _Emif2ConfigRegs                      
 1     00047800  _Emif2Regs                            
-0     00008d35  _EnableInterrupts                     
+0     00008d33  _EnableInterrupts                     
 0     0000015a  _F28x_usDelay                         
 0     0000b528  _FLASH_CORRECTABLE_ERROR_ISR          
 0     0000b3fc  _FPU_OVERFLOW_ISR                     
@@ -1188,8 +1188,8 @@ abs   ffffffff  .text
 0     000082e0  _InitAuxPll                           
 0     0000b585  _InitGpio                             
 0     00008020  _InitPeripheralClocks                 
-0     00008d16  _InitPieCtrl                          
-0     00008d3e  _InitPieVectTable                     
+0     00008d14  _InitPieCtrl                          
+0     00008d3c  _InitPieVectTable                     
 0     00008000  _InitSysCtrl                          
 0     000080f1  _InitSysPll                           
 1     00007900  _InputXbarRegs                        
@@ -1292,39 +1292,39 @@ abs   ffffffff  ___c_args__
 abs   ffffffff  ___etext__                            
 abs   ffffffff  ___pinit__                            
 abs   ffffffff  ___text__                             
-0     00008dfc  __args_main                           
+0     00008de2  __args_main                           
 1     0000acd0  __lock                                
-0     000087f8  __nop                                 
-0     000087f4  __register_lock                       
-0     000087f0  __register_unlock                     
+0     00008dfc  __nop                                 
+0     00008df8  __register_lock                       
+0     00008df4  __register_unlock                     
 1     00000400  __stack                               
 0     0000b7ff  __system_post_cinit                   
 0     0000b7fd  __system_pre_init                     
 1     0000acd2  __unlock                              
 0     0000b7c9  _abort                                
 1     0000acc0  _cUint16String                        
-0     00008c6d  _c_int00                              
+0     00008c6b  _c_int00                              
 1     0000acce  _cnt                                  
-0     00008d64  _copy_in                              
+0     00008d62  _copy_in                              
 0     0000b7cb  _exit                                 
-0     00008da8  _main                                 
-0     00008d88  _memcpy                               
+0     00008da6  _main                                 
+0     00008d86  _memcpy                               
 0     00008c1f  _vCpuTimer1_InterruptHandler          
 0     00008bfb  _vEPWM1_InterruptHandler              
-0     00008726  _vFractionalToString                  
+0     0000871c  _vFractionalToString                  
 0     00008800  _vHardwareSetup                       
-0     0000864d  _vInt16ToString                       
-0     0000869c  _vInt32ToString                       
-0     0000870b  _vInt64ToString                       
-0     00008542  _vMsgToSend                           
+0     00008643  _vInt16ToString                       
+0     00008692  _vInt32ToString                       
+0     00008701  _vInt64ToString                       
+0     00008538  _vMsgToSend                           
 0     000084ab  _vPrintWelcomeBanner                  
-0     0000852b  _vPutCharTxRingBuffer                 
-0     00008cc3  _vSCIA_RX_InterruptHandler            
-0     00008618  _vUint16ToString                      
-0     00008663  _vUint32ToString                      
-0     000086b2  _vUint64ToString                      
+0     00008521  _vPutCharTxRingBuffer                 
+0     00008cc1  _vSCIA_RX_InterruptHandler            
+0     0000860e  _vUint16ToString                      
+0     00008659  _vUint32ToString                      
+0     000086a8  _vUint64ToString                      
 0     000084f0  _vWriteSCI                            
-0     0000855f  _xReadSCI                             
+0     00008555  _xReadSCI                             
 abs   ffffffff  binit                                 
 0     00000123  cinit                                 
 0     00000000  code_start                            
@@ -1363,19 +1363,19 @@ page  address   name
 0     0000848e  _ConfigureTMXAnalogTrim               
 0     000084ab  _vPrintWelcomeBanner                  
 0     000084f0  _vWriteSCI                            
-0     0000852b  _vPutCharTxRingBuffer                 
-0     00008542  _vMsgToSend                           
-0     0000855f  _xReadSCI                             
-0     00008618  _vUint16ToString                      
-0     0000864d  _vInt16ToString                       
-0     00008663  _vUint32ToString                      
-0     0000869c  _vInt32ToString                       
-0     000086b2  _vUint64ToString                      
-0     0000870b  _vInt64ToString                       
-0     00008726  _vFractionalToString                  
-0     000087f0  __register_unlock                     
-0     000087f4  __register_lock                       
-0     000087f8  __nop                                 
+0     00008521  _vPutCharTxRingBuffer                 
+0     00008538  _vMsgToSend                           
+0     00008555  _xReadSCI                             
+0     0000860e  _vUint16ToString                      
+0     00008643  _vInt16ToString                       
+0     00008659  _vUint32ToString                      
+0     00008692  _vInt32ToString                       
+0     000086a8  _vUint64ToString                      
+0     00008701  _vInt64ToString                       
+0     0000871c  _vFractionalToString                  
+0     000087e6  LL$$AND                               
+0     000087ee  LL$$OR                                
+0     000087f6  LL$$XOR                               
 0     00008800  _vHardwareSetup                       
 0     0000897c  LL$$DIV                               
 0     000089b8  LL$$MOD                               
@@ -1386,20 +1386,20 @@ page  address   name
 0     00008b73  FS$$DIV                               
 0     00008bfb  _vEPWM1_InterruptHandler              
 0     00008c1f  _vCpuTimer1_InterruptHandler          
-0     00008c6d  _c_int00                              
-0     00008cc3  _vSCIA_RX_InterruptHandler            
-0     00008d16  _InitPieCtrl                          
-0     00008d35  _EnableInterrupts                     
-0     00008d3e  _InitPieVectTable                     
-0     00008d64  _copy_in                              
-0     00008d88  _memcpy                               
-0     00008da8  _main                                 
-0     00008dc6  LL$$CMP                               
-0     00008dd8  ULL$$CMP                              
-0     00008de4  LL$$AND                               
-0     00008dec  LL$$OR                                
-0     00008df4  LL$$XOR                               
-0     00008dfc  __args_main                           
+0     00008c6b  _c_int00                              
+0     00008cc1  _vSCIA_RX_InterruptHandler            
+0     00008d14  _InitPieCtrl                          
+0     00008d33  _EnableInterrupts                     
+0     00008d3c  _InitPieVectTable                     
+0     00008d62  _copy_in                              
+0     00008d86  _memcpy                               
+0     00008da6  _main                                 
+0     00008dc4  LL$$CMP                               
+0     00008dd6  ULL$$CMP                              
+0     00008de2  __args_main                           
+0     00008df4  __register_unlock                     
+0     00008df8  __register_lock                       
+0     00008dfc  __nop                                 
 0     0000b000  _TIMER1_ISR                           
 0     0000b00a  _TIMER2_ISR                           
 0     0000b014  _DATALOG_ISR                          
